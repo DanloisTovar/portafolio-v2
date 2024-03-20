@@ -1,10 +1,12 @@
+import { BrowserRouter as Router } from 'react-router-dom';
+import { AppRouter } from './router';
+
 function App() {
 	return (
 		<>
-			{/* navbar */}
-
-			{/* contenido */}
-			<h1>Portfolio</h1>
+			<Router>
+				<AppRouter />
+			</Router>
 		</>
 	);
 }
