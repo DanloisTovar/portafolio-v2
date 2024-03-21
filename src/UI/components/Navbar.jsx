@@ -30,7 +30,12 @@ function Navbar(props) {
 	const drawer = (
 		<Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
 			{/* name in mobile */}
-			<Typography variant="h6" sx={{ my: 2 }}>
+			<Typography
+				variant="h6"
+				sx={{ my: 2 }}
+				component={Link}
+				to={`/about-me`}
+			>
 				Danlos Tovar
 			</Typography>
 			<Divider />
@@ -77,7 +82,8 @@ function Navbar(props) {
 					{/*  name on desktop */}
 					<Typography
 						variant="h6"
-						component="div"
+						component={Link}
+						to={`/about-me`}
 						sx={{
 							flexGrow: 1,
 							display: { xs: 'none', sm: 'block' },
