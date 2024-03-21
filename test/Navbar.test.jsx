@@ -6,6 +6,7 @@ import Navbar from '../src/UI/components/Navbar';
 
 describe('Navbar test', () => {
 	/*Verifica que el componente NAvbar se renderiza sin errores  */
+	// eslint-disable-next-line jest/expect-expect
 	test('renders without crashing', () => {
 		render(
 			<Router>
